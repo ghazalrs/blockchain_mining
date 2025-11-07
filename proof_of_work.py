@@ -38,14 +38,14 @@ def proof_of_work(message, difficulty_level):
         nonce += 1
         trials += 1
         hash = generate_hash(message, previous_hash, nonce)
-    print(nonce)
-    print(trials)
+    print("Nonce:" , nonce)
+    print("Trials:" , trials)
 
 
 
 def main():
    message = "Hello World!"
-   difficulty_level = 2
+   difficulty_level = 7
    proof_of_work(message, difficulty_level) 
 
 
